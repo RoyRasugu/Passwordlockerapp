@@ -1,21 +1,20 @@
 class User:
     """
-    class that generates new instances of users
+    Class that generates new instances of contacts
     """
-    
     pass
 
-def __init__(self,username,password):
-    '''
-    __init__ method that helps us define properties for our objects.
+    def __init__(self,username,password):
 
-    Args:
-        username: New user Username.
-        password: New user Password
-    '''
+        '''
+        __init__method that helps us define properties for our objects.
 
-    self.username = username
-    self.password = password
+        Args:
+        username: New user username.
+        password: New user password
+        '''
 
+        # docstring removed for simplicity
 
-
+        self.username = username
+        self.password = password
