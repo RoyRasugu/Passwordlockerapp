@@ -3,8 +3,8 @@ class User:
     Class that generates new instances of contacts
     """
     pass
-    user_list = [] # Empty user list
-    
+    user_list = []
+
     def __init__(self,username,password):
 
         '''
@@ -15,7 +15,13 @@ class User:
         password: New user password
         '''
 
-        # docstring removed for simplicity
-
         self.username = username
         self.password = password
+    
+    def save_user(self):
+
+        '''
+        save_user method saves user objects into user_list
+        '''
+
+        User.user_list.append(self)
