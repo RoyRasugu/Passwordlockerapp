@@ -5,21 +5,21 @@ class User:
     pass
     user_list = []
 
-    def __init__(self,firstname,lastname,email,username,password):
+    def __init__(self,first_name,last_name,email,username,password):
 
         '''
         __init__method that helps us define properties for our objects.
 
         Args:
-        firstname: New user firstname.
-        lastname: New user lastname.
+        first_name: New user firstname.
+        last_name: New user lastname.
         email: New user email.
         username: New user username.
         password: New user password.
         '''
         
-        self.firstname = firstname
-        self.lastname = lastname
+        self.first_name = first_name
+        self.last_name = last_name
         self.email = email
         self.username = username
         self.password = password
