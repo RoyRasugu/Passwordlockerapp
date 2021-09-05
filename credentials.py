@@ -6,6 +6,7 @@ class Credentials:
     Class that generates new instances of credentials
     """
     pass
+    credentials_list = []
 
     def __init__(self,account,username,password):
         '''
