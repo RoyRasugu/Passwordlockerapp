@@ -1,11 +1,11 @@
 import unittest
 from unittest.case import TestCase
-from user import User 
+from user import User
+from credentials import Credentials
 
 class TestUser(unittest.TestCase):
-
     '''
-    Test class that defines test cases for the contact class behaviours.
+    Test class that defines test cases for the user class behaviours.
 
     Args:
         unittest.Testcase: Testcase class that helps in creating test cases
@@ -57,7 +57,6 @@ class TestUser(unittest.TestCase):
         test_save_multiple_user_ to check if we can save multiple user
         objects to our user_list 
         '''
-
         self.new_user.save_user()
         test_user = User("Brianna","Masiga","bree@yahoo.com","Bree","nighty")
         test_user.save_user()
@@ -80,7 +79,6 @@ class TestUser(unittest.TestCase):
         test to check if we can find a user by email and display 
         information
         '''
-
         self.new_user.save_user()
         test_user = User("Brianna","Masiga","bree@yahoo.com","Bree","nighty")
         test_user.save_user()
@@ -93,7 +91,6 @@ class TestUser(unittest.TestCase):
         '''
         test to check if we can return a Boolean  if we cannot find the user.
         '''
-
         self.new_user.save_user()
         test_user = User("Brianna","Masiga","bree@yahoo.com","Bree","nighty")
         test_user.save_user()
@@ -106,8 +103,28 @@ class TestUser(unittest.TestCase):
         '''
         method that returns a list of all users saved
         '''
-
         self.assertEqual(User.display_users(),User.user_list)
+
+class TestCredentials(unittest.TestCase):
+    '''
+    Test class that defines test cases for the credentials class behaviours.
+
+    Args:
+        unittest.Testcase: Testcase class that helps in creating test cases
+    '''
+    def setUp(self):
+        '''
+        Set up method to run before each test cases.
+        '''
+        self.new_credential = Credentials("Instagram","Ratchez","Pass1234")
+
+    def test_init(self):
+        '''
+        test_init test case to test if the object is initialized properly
+        '''
+        self.assertEqual(self.new_credential.account,"Instagram")
+        self.assertEqual(self.new_credential.username,"Ratchez")
+        self.assertEqual(self.new_credential.password,"Pass1234")
 
 if __name__ == '__main__':
     unittest.main()
