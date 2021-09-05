@@ -19,3 +19,11 @@ def del_user(user):
     Function to delete a contact
     '''
     user.delete_user()
+
+def find_user(username):
+    '''
+    Function that finds a user by username and returns the user
+    '''
+    return User.find_by_username(username)
+
+    
