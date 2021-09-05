@@ -37,7 +37,7 @@ def main():
     user_username = input()
 
     print(f"Hello {user_username}. what would you like to do?")
-    print('/n')
+    print('\n')
 
     while True:
         print("Use these short codes : cu - create a new user, du - display users, fu - find a user, ex - exit the user list ")
@@ -62,6 +62,27 @@ def main():
 
             print("User password ...")
             u_password = input()
-            
 
-            
+            save_users(create_user(f_name,l_name,e_address,u_name,u_password))
+            print('\n')
+            print(f"New User {u_name} created")
+            print('\n')
+
+        elif short_code == 'du':
+             if display_users():
+                print("Here is a list of all your users")
+                print('\n')
+
+                for user in display_users():
+                    print(f"{user.first_name} {user.last_name} {user.e_address} {user.u_name} {user.u_password}")
+
+                    print('\n')
+                else:
+                    print('\n')
+                    print("It seems to be there are no users saved")
+                    print('\n')
+
+        
+
+
+        
