@@ -82,7 +82,26 @@ def main():
                     print("It seems to be there are no users saved")
                     print('\n')
 
-        
+        elif short_code == 'fu':
+            print("Enter the username you want to search for")
 
+            search_name = input()
+            if check_existing_users(search_name):
+                search_user = find_user(search_name)
+                print(f"{search_user.first_name} {search_user.last_name}")
+                print('-' * 50)
+
+                print(f"Email address.......{search_user.email}")
+
+                print(f"Username name.......{search_user.username}")
+
+            else:
+                print("Sorry! The user does not exist")
+
+        elif short_code == "ex":
+            print("Bye .......")
+            break
+        else:
+            print("Didn't get that, please uae the short codes")
 
         
