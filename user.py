@@ -1,6 +1,6 @@
 class User:
     """
-    Class that generates new instances of contacts
+    Class that generates new instances of users
     """
     pass
     user_list = []
