@@ -1,7 +1,3 @@
-import random
-from user import User
-from run import display_users
-import string
 class Credentials:
     """
     Class that generates new instances of credentials
