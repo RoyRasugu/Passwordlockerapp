@@ -25,7 +25,7 @@ def save_users(user):
 
 def del_user(user):
     '''
-    Function to delete a contact
+    Function to delete a user
     '''
     user.delete_user()
 
@@ -40,6 +40,44 @@ def display_users():
     Function that returns all the saved users
     '''
     return User.display_users()
+
+def create_credential(account,username,password):
+    '''
+    Function to create a new credential
+    '''
+    new_credential = Credentials(account,username,password)
+    return new_credential
+
+def save_credentials(credentials):
+    '''
+    Function to save credentials
+    '''
+    credentials.save_credentials()
+
+def del_credentials(credentials):
+    '''
+    Function to delete credentials 
+    '''
+    credentials.delete_credentials()
+
+def find_credentials(account):
+    '''
+    Function that finds a user's credentials by account and returns the credential
+    '''
+    return Credentials.find_by_account(account)
+
+def display_credentials():
+    '''
+    Function that returns all the saved credentials
+    '''
+    return Credentials.display_credentials()
+
+def generate_Password():
+    '''
+    generates a random password for the user.
+    '''
+    auto_password = User.generate_password()
+    return auto_password
 
 def main():
     print("Hello Welcome to the Password Locker App...\n Please enter the following to proceed.\n")
@@ -83,7 +121,7 @@ def main():
                 print('\n')
 
                 for user in display_users():
-                    print(f"{user.first_name} {user.last_name} {user.email} {user.username} {user.password}")
+                    print(f"{user.first_name} {user.last_name} {user.email} {user.username}")
 
                     print('\n')
             else:
