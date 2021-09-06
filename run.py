@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.8
+from credentials import Credentials
 from user import User
 
 def create_user(fname,lname,email,uname,password):
@@ -7,6 +8,14 @@ def create_user(fname,lname,email,uname,password):
     '''
     new_user = User(fname,lname,email,uname,password)
     return new_user
+
+def login_user(username,password):
+    '''
+    Function that checks whether a user exist and then allows them to log in.
+    '''
+
+    check_user = User.verify_user(username,password)
+    return check_user
 
 def save_users(user):
     '''
