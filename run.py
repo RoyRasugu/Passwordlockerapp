@@ -20,11 +20,11 @@ def del_user(user):
     '''
     user.delete_user()
 
-def find_user(email):
+def find_user(username):
     '''
     Function that finds a user by username and returns the user
     '''
-    return User.find_by_email(email)
+    return User.find_by_username(username)
 
 def display_users():
     '''
@@ -86,7 +86,7 @@ def main():
             print("Enter the username you want to search for")
 
             search_name = input()
-            if check_existing_users(search_name):
+            if find_user(search_name):
                 search_user = find_user(search_name)
                 print(f"{search_user.first_name} {search_user.last_name}")
                 print('-' * 50)
