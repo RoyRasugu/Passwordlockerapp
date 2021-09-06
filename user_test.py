@@ -31,7 +31,6 @@ class TestUser(unittest.TestCase):
         test_save_user test case to test if the user object is saved in to
         the user list
         '''
-
         self.new_user.save_user()
         self.assertEqual(len(User.user_list),1)
  
@@ -125,6 +124,14 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credential.account,"Instagram")
         self.assertEqual(self.new_credential.username,"Ratchez")
         self.assertEqual(self.new_credential.password,"Pass1234")
+
+    def test_save_credential(self):
+        '''
+        test_save_credential test case to test if the credential object is saved in to
+        the credential list
+        '''
+        self.new_credential.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
 
 if __name__ == '__main__':
     unittest.main()
