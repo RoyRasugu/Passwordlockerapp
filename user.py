@@ -56,7 +56,7 @@ class User:
         '''
         Method that checks if user exists from the user list.
         Args:
-            username: Users' to search if it exists
+            username: Username to search if it exists
         Returns:
             Boolean: True or false depending if the user exists 
         ''' 
