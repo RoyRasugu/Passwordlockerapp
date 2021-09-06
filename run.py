@@ -80,7 +80,7 @@ def main():
             else:
                 print('\n')
                 print("It seems to be there are no users saved")
-                print('/n')
+                print('\n')
 
         elif short_code == 'fu':
             print("Enter the username you want to search for")
@@ -99,7 +99,7 @@ def main():
                 print("Sorry! The user does not exist")
 
         elif short_code == "ex":
-            print("Bye .......")
+            print("Bye and thanks for using our App.")
             break
         else:
             print("Didn't get that, please uae the short codes")
