@@ -33,7 +33,7 @@ def display_users():
     return User.display_users()
 
 def main():
-    print("Hello Welcome to the Password Locker App. Please input your username")
+    print("Hello Welcome to the Password Locker App...\n Please enter the following to proceed.\n")
     user_username = input()
 
     print(f"Hello {user_username}. what would you like to do?")
@@ -69,18 +69,18 @@ def main():
             print('\n')
 
         elif short_code == 'du':
-             if display_users():
+            if display_users():
                 print("Here is a list of all your users")
                 print('\n')
 
                 for user in display_users():
-                    print(f"{user.first_name} {user.last_name} {user.e_address} {user.u_name} {user.u_password}")
+                    print(f"{user.first_name} {user.last_name} {user.email} {user.username} {user.password}")
 
                     print('\n')
-                else:
-                    print('\n')
-                    print("It seems to be there are no users saved")
-                    print('\n')
+            else:
+                print('\n')
+                print("It seems to be there are no users saved")
+                print('/n')
 
         elif short_code == 'fu':
             print("Enter the username you want to search for")
@@ -104,4 +104,6 @@ def main():
         else:
             print("Didn't get that, please uae the short codes")
 
+if __name__ == '__main__':
+    main()
         
