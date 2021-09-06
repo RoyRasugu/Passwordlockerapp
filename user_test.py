@@ -62,7 +62,7 @@ class TestUser(unittest.TestCase):
         self.new_user.delete_user()
         self.assertEqual(len(User.user_list),1)
 
-    def test_find_user_by_email(self):
+    def test_find_user_by_username(self):
         '''
         test to check if we can find a user by email and display 
         information
@@ -71,9 +71,9 @@ class TestUser(unittest.TestCase):
         test_user = User("Brianna","Masiga","bree@yahoo.com","Bree","nighty")
         test_user.save_user()
 
-        found_user = User.find_by_email("bree@yahoo.com")
+        found_user = User.find_by_username("Bree")
 
-        self.assertEqual(found_user.email,test_user.email)
+        self.assertEqual(found_user.username,test_user.username)
 
     def test_user_exists(self):
         '''
@@ -83,7 +83,7 @@ class TestUser(unittest.TestCase):
         test_user = User("Brianna","Masiga","bree@yahoo.com","Bree","nighty")
         test_user.save_user()
 
-        user_exists = User.user_exist("bree@yahoo.com")
+        user_exists = User.user_exist("Bree")
 
         self.assertTrue(user_exists)
     
@@ -149,6 +149,19 @@ class TestCredentials(unittest.TestCase):
 
         self.new_credential.delete_credential()
         self.assertEqual(len(Credentials.credentials_list),1)
+
+    def test_find_credential_by_account(self):
+        '''
+        test to check if we can find a credential entry by account name and display
+        the details of the credential
+        '''
+        self.new_credential.save_credentials()
+        test_credential = Credentials("Pinterest","Bree","Damn12")
+        test_credential.save_credentials()
+
+        found_credential = Credentials.find_by_account("Pinterest")
+
+        self.assertEqual(found_credential.account,test_credential.account)
 
 if __name__ == '__main__':
     unittest.main()
