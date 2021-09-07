@@ -104,7 +104,7 @@ def main():
             
         save_users(create_user(fname,lname,email,uname,password))
         print("*" * 85)
-        print(f"Hello {fname} {lname}, Your accout has been created succesfully! here are more of your details Email: {email}, Username: {uname} and your password is: {password}")
+        print(f"Hello {fname} {lname}, Your account has been created succesfully! here are more of your details Email: {email}, Username: {uname} and your password is: {password}")
         print("*" * 85)
 
     elif short_code == "ha":
@@ -179,7 +179,7 @@ def main():
                 print("_" * 50)
                 search_credential.delete_credentials()
                 print('\n')
-                print(f"Your stored credentials for: {search_credential.account} successfully deleted!!!")
+                print(f"Your stored credentials for : {search_credential.account} successfully deleted!!!")
                 print('\n')
             else:
                 print("The Credential you want to delete does not exist")
