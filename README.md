@@ -35,7 +35,7 @@ The user can:
        $ chmod +x run.py
        $ ./run.py
 * To run test for the application
-       $  python3 user_test.py
+       $  python3.8 user_test.py
 
 ## Dependencies
 
