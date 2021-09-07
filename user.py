@@ -86,7 +86,7 @@ class User:
         '''
         return cls.user_list
 
-    def generate_password(stringLength=8):
+    def generatePassword(stringLength=8):
         '''
         method that generates a random password string of letters,digits and special characters
         '''
