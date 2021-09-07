@@ -142,7 +142,7 @@ def main():
 
             save_credentials(create_credential(account,username,password))
             print('\n')
-            print(f"Account Credentials for: {account} - Username: {username} & Password:{password} was created successfully") 
+            print(f"Account Credentials for {account} - Username: {username} & Password: {password} was created successfully") 
             print('\n')
 
         elif short_code == "dc":
