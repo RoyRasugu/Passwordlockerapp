@@ -107,7 +107,7 @@ def main():
         print(f"Hello {fname} {lname}, Your accout has been created succesfully! here are more of your details Email: {email}, Username: {uname} and your password is: {password}")
         print("*" * 85)
 
-    elif short_code == "li":
+    elif short_code == "ha":
         print("*" * 50)
         print("Enter your Username and Password to login:")
         print('*' * 50)
