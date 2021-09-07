@@ -179,7 +179,7 @@ def main():
                 print("_" * 50)
                 search_credential.delete_credentials()
                 print('\n')
-                print(f"Your stored credentials for : {search_credential.account} successfully deleted!!!")
+                print(f"Your stored credentials for: {search_credential.account} successfully deleted!!!")
                 print('\n')
             else:
                 print("The Credential you want to delete does not exist")
