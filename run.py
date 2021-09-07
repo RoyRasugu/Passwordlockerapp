@@ -2,6 +2,17 @@
 from credentials import Credentials
 from user import User
 
+def function():
+    print("          ____                          __                          __   __           ")
+    print("         |  _ \                        |  |      ____      ____    |  | /  /          ")
+    print("         | |_) )  ____  ___   ___      |  |     /  _  \   /  __|   |  |/  /           ")
+    print("         |  __/  / _  |/ __  / __      |  |    |  | |  | |  |      |     /            ")
+    print("         | |    / (_| |\__ \ \__ \     |  |__  |  |_|  | |  |___   |  |\  \           ")
+    print("         |_|    \ ___ | ___/  ___/     |_____|  \____ /   \_____|  |__| \__\          ")
+    print('\n')
+    
+function()
+
 def create_user(fname,lname,email,uname,password):
     '''
     Function to create a new user
@@ -142,7 +153,7 @@ def main():
 
             save_credentials(create_credential(account,username,password))
             print('\n')
-            print(f"Account Credentials for {account} - Username: {username} & Password: {password} was created successfully") 
+            print(f"Account Credentials for {account} - Username: {username} & Password: {password}, was created successfully") 
             print('\n')
 
         elif short_code == "dc":
@@ -155,7 +166,7 @@ def main():
                 for account in display_credentials():
                     print(f" Account:{account.account} \n Username:{username}\n Password:{password}")
                     print('_' * 30)
-                print('*' * 30)
+                    print('*' * 30)
             else:
                 print("Ooops...Sorry, we dont seem to find youre credentials.........")
 
