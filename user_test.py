@@ -147,7 +147,7 @@ class TestCredentials(unittest.TestCase):
         test_credential = Credentials("Pinterest","Bree","Damn12")
         test_credential.save_credentials()
 
-        self.new_credential.delete_credential()
+        self.new_credential.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list),1)
 
     def test_find_credential_by_account(self):
