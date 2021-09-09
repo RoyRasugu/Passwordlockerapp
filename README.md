@@ -39,7 +39,7 @@ The user can:
 
 ## Dependencies
 
-1. Open the application on the terminal. Run the command ```$ ./rn.py```. You will see the Home menu 'Hello Welcome to the Password Locker App...'. From here you have to options tp choose: either to create an account(CA ---), that is if you dont have or login if already have an existing account(HA ---).
+1. Open the application on the terminal. Run the command ```$ ./run.py```. You will see the Home menu 'Hello Welcome to the Password Locker App...'. From here you have to options tp choose: either to create an account(CA ---), that is if you dont have or login if already have an existing account(HA ---).
 2. If you select (CA), then you will have to input you're firstname, lastname, email, username and password. Afterwards you will receive a message saying 'Hello ```firstname lastname```, Your account has been created successfully! Here are more of your details ```Email: , Username: ``` and your password is: ```password```.
 3. If you select (HA), then you you will just input youre username and password that you signed up with to login. With that Abbreviations menu will be displayed to help you navigate through the application.
 4. To strore a new credential in the application, one will enter ```CC```, where they will enter the account, username and password. Of which in terms of the password, they have two options: 1 which is to enter ```Tp``` to key in a password or 2 which is to enter ```Gp``` to be generated for a password.
