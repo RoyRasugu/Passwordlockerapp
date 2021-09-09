@@ -23,9 +23,9 @@ The user can:
 
 * Open Terminal {Ctrl+Alt+T}
 
-* cd Password-Locker
-
 * git clone ```https://github.com/RoyRasugu/Passwordlockerapp.git```
+
+* cd Password-Locker
 
 * code . or atom . based on the text editor you prefer.
 
