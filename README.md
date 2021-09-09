@@ -25,7 +25,7 @@ The user can:
 
 * git clone ```https://github.com/RoyRasugu/Passwordlockerapp.git```
 
-* cd Password-Locker
+* cd Passwordlockerapp
 
 * code . or atom . based on the text editor you prefer.
 
